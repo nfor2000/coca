@@ -8,30 +8,156 @@
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
           <script src="./assets/js/main.js" defer></script>
      </head>
-     <body>
+     <body class="min-h-screen">
           <header class="shadow-lg sticky z-10">
-               <div class="mx-auto max-w-6xl px-5 py-4 sm:px-0 flex items-center justify-between relative z-10 h-20">
+               <div class="mx-auto max-w-6xl px-6 py-4 sm:px-0 flex items-center justify-between relative z-10 h-20">
                     <div class="flex items-center gap-x-2 font-bold">
                          <span class="bg-blue-500 text-3xl text-white w-10 h-10 rounded-full flex items-center justify-center">C</span>
                          <h1 class="text-2xl">Coca</h1>
                     </div>
-                    <button class="open-menu">
-                         <i class="bi bi-list text-3xl font-bold"></i>
+                    <button id="open-menu">
+                         <i class="bi bi-list text-4xl font-bold"></i>
                     </button>
-                    <nav class="fixed right-0 top-0 bottom-0 w-2/3 flex flex-col bg-white pl-8 pr-5 pt-5 gap-5 transform translate-x-full sm:translate-x-0 transition-all ">
-                         <button class="self-end text-3xl">
-                              <i class="bi bi-x text-3xl"></i>
+                    <nav class="fixed right-0 top-0 bottom-0 w-2/3 flex flex-col bg-white pl-8 pr-5 pt-5 gap-5 transform translate-x-full sm:translate-x-0 transition-all " id="nav-menu">
+                         <button class="self-end" id="close-menu">
+                              <i class="bi bi-x text-4xl font-bold"></i>
                          </button>
-                         <a href="" class="text-lg hover:text-blue-500">Home</a>
-                         <a href="" class="text-lg hover:text-blue-500">About us</a>
-                         <a href="" class="text-lg hover:text-blue-500">Our team</a>
-                         <a href="" class="text-lg hover:text-blue-500">Contact</a>
+                         <a href="" class="nav-link text-lg hover:text-blue-500">Home</a>
+                         <a href="" class="nav-link text-lg hover:text-blue-500">About us</a>
+                         <a href="" class="nav-link text-lg hover:text-blue-500">Our team</a>
+                         <a href="" class="nav-link text-lg hover:text-blue-500">Contact</a>
                     </nav>
                </div>
           </header>
           <main>
+               <section id="hero" class="max-w-6xl mx-auto px-6 py-10">
+                    <div>
+                         <h2 class="font-bold text-3xl text-center">
+                              Advance your <span class="text-gradient">business</span> to new heights
+                         </h2>
+                         <div class="pt-5">
+                              <img src="" alt="person-1" class="hidden">
+                              <div class="text-center">
+                                   <p class="text-lg text-slate-400 font-medium">The art of visual commutation, creativity impacting the world around us one good design at a time. Design like you mean it </p>
+                                   <div class="py-5 flex justify-center gap-5">
+                                        <a href="#" class="max-w-max p-3 text-white bg-blue-600 text-lg rounded-xl border-solid border-2 border-blue-600 hover:text-blue-600 hover:bg-white">Start a project</a>
+                                        <a href="#" class="max-w-max p-3 text-blue-600 bg-blue-white text-lg rounded-xl border-solid border-2 border-blue-600 hover:text-white hover:bg-blue-600">View case study</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="flex flex-col gap-4 pt-5">
+                         <div class="grid gap-4 grid-cols-2">
+                              <div>
+                                   <h3 class="flex items-center text-2xl font-bold">
+                                        <i class="bi bi-star-fill text-yellow-400 mr-2 text-lg"></i>
+                                        4,8
+                                   </h3>
+                                   <p class="text-slate-400">from 150,000+ reviews</p>
+                              </div>
+                              <div>
+                                   <h3 class="flex items-center text-2xl font-bold">
+                                        <i class="bi bi-star-fill text-lg text-green-700 mr-2"></i>
+                                        Trustpilot
+                                   </h3>
+                                   <p class="">
+                                        <i class="bi bi-star-fill text-lg text-green-700 mr-2"></i>
+                                        <i class="bi bi-star-fill text-lg text-green-700 mr-2"></i>
+                                        <i class="bi bi-star-fill text-lg text-green-700 mr-2"></i>
+                                        <i class="bi bi-star-fill text-lg text-green-700 mr-2"></i>
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="grid gap-4 grid-cols-2">
+                              <div>
+                                   <h3 class="flex items-center text-2xl font-bold">
+                                        15+
+                                   </h3>
+                                   <p class="text-slate-400">Years of experience</p>
+                              </div>
+                              <div>
+                                   <h3 class="flex items-center text-2xl font-bold">
+                                        1,2K
+                                   </h3>
+                                   <p class="text-slate-400">Customers worldwide</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="pt-5">
+                         <h3 class="text-2xl font-bold text-center">Trusted by Big Companies</h3>
+                         <div class="grid grid-cols-2 pt-4 gap-3">
+                              <div class="flex items-center even:justify-end">
+                                   <img class="w-10" src="./assets/images/icon1.png" alt="welytics">
+                                   <h4 class="text-xl font-semibold uppercase">Welytis</h4>
+                              </div>
+                              <div class="flex items-center even:justify-end">
+                                   <img class="w-10" src="./assets/images/icon2.png" alt="jiggle">
+                                   <h4 class="text-xl font-semibold uppercase">jiggle</h4>
+                              </div>
+                              <div class="flex items-center even:justify-end">
+                                   <img class="w-10" src="./assets/images/icon3.png" alt="resecurb">
+                                   <h4 class="text-xl font-semibold capitalize">resecurb</h4>
+                              </div>
+                              <div class="flex items-center even:justify-end">
+                                   <img class="w-10" src="./assets/images/icon4.png" alt="wishelp">
+                                   <h4 class="text-xl font-semibold capitalize">wishelp</h4>
+                              </div>
+                              <div class="sn:flex items-center hidden">
+                                   <img class="w-10" src="./assets/images/icon5.png" alt="symtric">
+                                   <h4 class="text-xl font-semibold uppercase">symtric</h4>
+                              </div>
+                         </div>
+                    </div>
+               </section>
 
+               <section id="services" class="bg-slate-900 text-white">
+                    <div class="max-w-6xl mx-auto px-6 py-10 bg-blend-darken ">
+                         <div class="grid grid-cols-1 gap-6">
+                              <div class="flex items-center gap-3 flex-col">
+                                   <div class="bg-slate-500 w-14 h-14 shrink-0 rounded-full flex items-center justify-center" >
+                                        <i class="text-2xl bi bi-brush-fill"></i>
+                                   </div>
+                                   <div class="text-center">
+                                        <h4 class="font-semibold text-xl">Graphic design</h4>
+                                        <p>Transform ideas into captivating visuals that resonate. Tailored designs to elevate your brand.</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center gap-3 flex-col">
+                                   <div class="bg-slate-500 w-14 h-14 shrink-0 rounded-full flex items-center justify-center" >
+                                        <i class="text-2xl bi bi-globe"></i>
+                                   </div>
+                                   <div class="text-center">
+                                        <h4 class="font-semibold text-xl">Web design</h4>
+                                        <p>Craft immersive online experiences that captivate audiences. User-focused designs that blend creativity and functionality.</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center gap-3 flex-col">
+                                   <div class="bg-slate-500 w-14 h-14 shrink-0 rounded-full flex items-center justify-center" >
+                                        <i class="text-2xl bi bi-laptop-fill"></i>
+                                   </div>
+                                   <div class="text-center">
+                                        <h4 class="font-semibold text-xl">Branding</h4>
+                                        <p> Establish a strong brand presence with cohesive visuals. Tailored strategies to differentiate and resonate with your audience.</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center gap-3 flex-col">
+                                   <div class="bg-slate-500 w-14 h-14 shrink-0 rounded-full flex items-center justify-center" >
+                                        <i class="text-2xl bi bi-pencil-fill"></i>
+                                   </div>
+                                   <div class="text-center">
+                                        <h4 class="font-semibold text-xl">Illustration</h4>
+                                        <p>  Bring narratives to life through unique visual storytelling. Custom illustrations that capture emotions and engage viewers.</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="pt-8">
+                              <h3 class="text-2xl font-bold text-center mb-3">Easy, Dynamic, and optimal work flow</h3>
+                              <p class="text-lg text-center text-slate-400 mb-3">We adhere to the finest, official and uncomplicated operational mwthods to optimiize your business expansion.</p>
+                              <img src="./assets/images/person-1.jpg" class="rounded-md w-fit" alt="">
+                         </div>
+                    </div>
+               </section>
           </main>
-          <div class="absolute left-0 top-20 right-0 bottom-0 bg-black opacity-40 hidden"></div>
+          <div id="overlay" class="absolute left-0 top-20 right-0 bottom-0 bg-black opacity-40 hidden"></div>
      </body>
 </html>
