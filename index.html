@@ -10,16 +10,16 @@
      </head>
      <body class="min-h-screen">
           <header class="top-0 shadow-lg sticky z-10 bg-white">
-               <div class="mx-auto max-w-6xl px-6 py-4 sm:px-0 flex items-center justify-between relative z-10 h-20">
+               <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between relative z-10 h-20">
                     <div class="flex items-center gap-x-2 font-bold">
                          <span class="bg-blue-500 text-3xl text-white w-10 h-10 rounded-full flex items-center justify-center">C</span>
                          <h1 class="text-2xl">Coca</h1>
                     </div>
-                    <button id="open-menu">
+                    <button id="open-menu" class="sm:hidden">
                          <i class="bi bi-list text-4xl font-bold"></i>
                     </button>
-                    <nav class="fixed right-0 top-0 bottom-0 w-2/3 flex flex-col bg-white pl-8 pr-5 pt-5 gap-5 transform translate-x-full transition-all " id="nav-menu">
-                         <button class="self-end" id="close-menu">
+                    <nav class="fixed right-0 top-0 bottom-0 w-2/3 flex flex-col bg-white pl-8 pr-5 pt-5 gap-5 transform translate-x-full transition-all sm:relative sm:translate-x-0 sm:flex-row sm:p-0 sm:w-auto" id="nav-menu">
+                         <button class="self-end sm:hidden" id="close-menu">
                               <i class="bi bi-x text-4xl font-bold"></i>
                          </button>
                          <a href="" class="nav-link text-lg hover:text-blue-500">Home</a>
